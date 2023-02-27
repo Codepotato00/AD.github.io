@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/learningpage.css">
+  <title>👋 My learning﹛Ada Dai﹜</title>
+</head>
+
+
+<body>
+  <section class="showcaseC">
+  <!--Video BG -->
+     <video src="pics learningpage/Jtea1.mp4" muted loop autoplay></video>
+  <!--Video BG Overlay-->
+     <div class="overlay"></div>
+<!--goback button with sound-->
+     <div class="goback" onmousedown="bleep.play()">
+         <a href="/Users/ainidai/Desktop/HTML5 CSS JS/Resume/html5/index.html">🔙</a>
+     </div>
+<!--resume body-->
+     <div class="title" align="center"><h1>One Thing A Month</h1></div>
+     <div class="main">
+
+     <div class="book" <img src="pics learningpage/book.png" alt="bigmagic"></div>
+
+</section>
+
+
+
+
+
+<!--JS for Button sounds-->
+    <script>
+     var bleep = new Audio("sounds contactpage/stop.mp3");
+     document.querySelector(".bleep").addEventListener("click", function() {
+     bleep.play()
+     })
+    </script>
+
+</body>
+</html>

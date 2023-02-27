@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>👋 Welcome to My Personal Site﹛Ada Dai﹜</title>
+</head>
+
+<body>
+    <section class="showcase">
+    <header>
+<!--Left HELLO-->
+       <h2 class="logo">Hello</h2>
+<!--Right Menu-->
+       <div class="toggle"></div>
+    </header>
+<!--Video BG-->
+    <video src="pics firstpage/room_-_74450 (Original).mp4" muted loop autoplay></video>
+<!--Video BG Overlay-->
+    <div class="overlay"></div>
+<!--First page content-->
+    <div class="text" align='center'>
+       <h2>I'm Ada.D</h2>
+       <h3 align='center'>frontend developer</h3>
+       <p> I am fascinated by the chemistry of human-computer interaction.I'm not just a front-end developer, but a driver of good products.
+        I want to make users fall in love with the product at first sight.</p>
+<!--Self intro video needed for a href link-->
+       <a href="file:///Users/ainidai/Desktop/HTML5%20CSS%20JS/Resume/html5/my%20contact.html">Contact</a>
+
+
+
+<!--BG Music -->
+<audio id="music1" src="sounds firstpage/intro mee.mp3" autoplay loop></audio>
+
+    <div class="music">
+              <div id="audio-BGM" onclick="playPause()">
+              <div class="audio-wire audio-wire-1"></div>
+              <div class="audio-wire audio-wire-2"></div>
+              <div class="audio-wire audio-wire-3"></div>
+              <div class="audio-wire audio-wire-4"></div>
+              <div class="audio-wire audio-wire-5"></div>
+              <div class="audio-wire audio-wire-6"></div>
+              <div class="audio-wire audio-wire-7"></div>
+              <div class="audio-wire audio-wire-8"></div>
+              <div class="audio-wire audio-wire-9"></div>
+              <div class="audio-wire audio-wire-10"></div>
+   </div>
+        <em>CLICK FOR PLAY OR PAUSE</em>
+   </div>
+
+<!--BG Music bar animation -->
+  <script>
+         function playPause(){
+                document.getElementById('music1').paused
+                ?document.getElementById('music1').play()
+                :document.getElementById('music1').pause()
+
+                document.querySelector('.audio-wire-1').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-1').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-1').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-2').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-2').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-2').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-3').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-3').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-3').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-4').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-4').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-4').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-5').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-5').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-5').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-6').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-6').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-6').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-7').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-7').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-7').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-8').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-8').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-8').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-9').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-9').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-9').style.animationPlayState = "paused"
+
+                document.querySelector('.audio-wire-10').style.animationPlayState == "paused"
+                ? document.querySelector('.audio-wire-10').style.animationPlayState = "running"
+                : document.querySelector('.audio-wire-10').style.animationPlayState = "paused"
+              }
+    </script>
+  </div>
+</div>
+
+
+<!-- social icon -->
+<ul class="social">
+  <li><a href="https://www.linkedin.com/in/aini-d-34402239/"><img src="pics firstpage/linkedin-icons.png"  width="40" height="40" alt="Linkedin" ></a></li>
+  <li><a href="https://github.com/Codepotato00"><img src="pics firstpage/github 1.png" width="40" height="40" alt="Github"></a></li>
+</ul>
+  </section>
+
+
+
+<!--toggle menu items and sound effects-->
+<div class="menu">
+  <script>
+   var bleep = new Audio("sounds firstpage/stop.mp3");
+   document.querySelector(".bleep").addEventListener("click", function() {
+   bleep.play()
+   })
+  </script>
+
+
+    <ul>
+      <li><h1><a href="my work.html" onmousedown="bleep.play()">My Work</a></h1></li>
+      <li><h1><a href="learningpage.html" onmousedown="bleep.play()">My Learning</a></h1></li>
+      <li><h1><a href="#" onmousedown="bleep.play()">My Channel</a></h1></li>
+      <li><h1><a href="my life.html" onmousedown="bleep.play()">My Life</a></h1></li>
+      <li><h1><a href="my contact.html" onmousedown="bleep.play()">My Contact</a></h1></li>
+    </ul>
+</div>
+
+
+<!-- toggle menu open effect-->
+<script>
+   const menuToggle = document.querySelector('.toggle')
+   const showcase = document.querySelector('.showcase')
+     menuToggle.addEventListener('click',() => {
+     menuToggle.classList.toggle('active')
+     showcase.classList.toggle('active')
+     })
+</script>
+
+</body>
+</html>

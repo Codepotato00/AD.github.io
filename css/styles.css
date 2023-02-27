@@ -1,0 +1,324 @@
+/*First page font style inputs*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/*Defult overlay color*/
+:root{
+  --overlay-color:#03a9f4
+}
+
+/*First page body/div/p/span font family*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*First page overall context*/
+.showcase {
+  position: absolute;
+  right: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color:#fff;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.showcase.active{
+  right: 300px;
+}
+
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.6;
+}
+
+/*First page menutoggle open*/
+.toggle {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 40px;
+  background: url('css firstpage pics/whiteicon21.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  cursor: pointer;
+}
+/*First page menutoggle close*/
+.toggle.active{
+  background-image: url('css firstpage pics/x.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-color: white;
+  background-position: center;
+}
+/*First page menutoggle background*/
+.menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url('css firstpage pics/background.jpg');
+  filter: grayscale(0.2);
+  background-size: cover;
+}
+/*First page menutoggle position*/
+.menu ul{
+  position: relative;
+  list-style: none;
+}
+/*First page menutoggle text*/
+.menu ul li a{
+  text-decoration: none;
+  line-height: 3;
+  font-size: 28px;
+  color:#fff;
+  text-shadow: 5px 5px 5px #66806A;
+  font-family: 'Poppins', sans-serif;
+
+}
+/*First page menutoggle text animation effect*/
+.menu ul li a:hover{
+  color: #38A3A5;
+  text-shadow: 1px 1px 10px #F6C6EA,
+               1px 2px 1px #F6C6EA,
+               1px 3px 1px #F6C6EA,
+               1px 4px 1px #F6C6EA,
+               1px 5px 1px #FDB827,
+               1px 6px 1px #FDB827,
+               1px 7px 1px #FDB827,
+               1px 8px 1px #FDB827,
+               1px 9px 20px #79D70F,
+               1px 10px 20px #79D70F,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+/*First page BG music*/
+.music{
+  position: absolute;
+  display: flex;
+  bottom:40px;
+  left: 390px;
+  opacity: 0.49;
+  flex-direction:column;
+}
+
+
+#audio-BGM{
+  height: 60px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px;
+}
+
+#audio-BGM .audio-wire{
+  height:50%;
+  margin: 0px 3px;
+  padding: 0px 1.5px;
+  background-color: rgb(221, 221, 221);
+  animation: animateUpDown .5s infinite alternate;
+}
+/*First page music bar movement*/
+#audio-BGM .audio-wire-1{
+  animation-delay: 50ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-2{
+  animation-delay: 150ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-3{
+  animation-delay: 300ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-4{
+  animation-delay: 400ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-5{
+  animation-delay: 150ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-6{
+  animation-delay: 550ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-7{
+  animation-delay: 50ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-8{
+  animation-delay: 250ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-9{
+  animation-delay: 550ms;
+  cursor: pointer;
+}
+#audio-BGM .audio-wire-10{
+  animation-delay: 250ms;
+  cursor: pointer;
+}
+/*First page music bar movement animation*/
+@keyframes animateUpDown {
+  to{
+    height: 60%;
+  }
+  from{
+    height: 20%;
+  }
+}
+
+/* First page text*/
+.logo{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text h2 {
+  font-size:15px;
+  line-height: 10px;
+  text-align: right;
+  padding: 25px 190px 100px 0;
+}
+
+.text h3 {
+	position: inherit;
+	top: -55px;
+	left: 150px;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+ position: inherit;
+ top: -55px;
+ left: 150px;
+ font-size: 1.1em;
+ margin: 20px 0;
+ font-weight: 400;
+ max-width: 700px;
+}
+
+/* First page Explore*/
+.text a {
+  display:inline-block;
+  position:relative;
+  top: -35px;
+  left: 135px;
+  font-size: 1em;
+  background: #fff;
+  padding: 8px 40px;
+  text-decoration: none;
+  color:#111;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+/* First page Explore after click*/
+.text a:hover{
+  letter-spacing: 7px;
+}
+
+
+@media(max-width: 798px){
+  .showcase,
+  .showcase header{
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+
+  .text h3{
+    font-size: 2em;
+  }
+}
+
+
+/* First page video background*/
+.showcase video{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  opacity: 0.58;
+}
+/* First page video background blend*/
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: var(--overlay-color);
+  mix-blend-mode: overlay;
+  opacity: 0.9;
+}
+
+.text{
+  position: relative;
+  z-index: 10;
+}
+
+
+/*First page icons*/
+
+.social{
+  position: absolute;
+  left:440px;
+  bottom: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li{
+  list-style: none;
+}
+
+.social li a{
+  display:inline-block;
+  filter: invert(1);
+  margin-right: 10px;
+  transform: scale(0.7);
+  transition: 0.5s;
+  opacity: 0.9;
+
+}
+
+.social li a:hover{
+  transform: scale(0.9) translateY(-20px);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/ my work.css">
+  <title>👋 My Work﹛Ada Dai﹜</title>
+</head>
+
+
+<body>
+  <section class="showcaseC">
+  <!--Video BG -->
+     <video src="pics workpage/study.mp4" muted loop autoplay></video>
+  <!--Video BG Overlay-->
+     <div class="overlay"></div>
+<!--goback button with sound-->
+     <div class="goback" onmousedown="bleep.play()">
+         <a href="/Users/ainidai/Desktop/HTML5 CSS JS/Resume/html5/index.html">🔙</a>
+     </div>
+<!--resume body-->
+     <div class="title" align="center"><h1>What I Can Do For You</h1></div>
+     <div class="main">
+     <div class="Company"><h2>Company</h2>
+       <div class="R"><p>RICEPO by Weee</p></div>
+       <div class="T"><p>TrueCare24</p></div>
+       <div class="S"><p>Star Cruise</p></div>
+     </div>
+
+     <div class="experience"><h2>Experience</h2>
+       <div class="opsm"><p>Operation Manager</p></div>
+       <div class="opsa"><p>Operation Analyst</p></div>
+       <div class="csom"><p>Customer Services Ops Manager</p></div>
+     </div>
+
+     <div class="skill"><h2>Skill</h2>
+       <div class="html"><p>HTML</p></div>
+       <div class="css"><p>CSS</p></div>
+       <div class="js"><p>Javascript</p></div>
+       <div class="node"><p>Node</p></div>
+       <div class="react"><p>React</p></div>
+       <div class="mango"><p>MongoDB</p></div>
+       <div class="web3"><p>Web3</p></div>
+       <div class="dapps"><p>DApps</p></div>
+       <div class="sql"><p>SQL</p></div>
+       <div class="excel"><p>Excel</p></div>
+       <div class="ps"><p>PhotoShop</p></div>
+     </div>
+
+     <div class="language"><h2>Language</h2>
+       <div class="en"><p>English</p></div>
+       <div class="ch"><p>Mandarin</p></div>
+       <div class="jap"><p>Japanese</p></div>
+     </div>
+
+     <div class="education"><h2>Education</h2>
+       <div class="ucb"><p>UC Berkeley</p></div>
+     </div>
+</section>
+
+
+<!--submit button for CV-->
+    <button class="submit" type="submit" name="button" onmousedown="bleep.play()" a href="#">
+    <h3>Download CV</h3></a></button>
+
+
+
+<!--JS for Button sounds-->
+    <script>
+     var bleep = new Audio("sounds contactpage/stop.mp3");
+     document.querySelector(".bleep").addEventListener("click", function() {
+     bleep.play()
+     })
+    </script>
+
+</body>
+</html>

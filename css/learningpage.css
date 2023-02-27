@@ -1,0 +1,92 @@
+/*workpage font style inputs*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/*contactpage text style*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/*workpage goback box*/
+.goback{
+   position: absolute;
+   top:20px;
+   left:20px;
+   size: 150px;
+   background-color:#39A9CB;
+   font-size: 1.8em;
+   color:#366473;
+   mix-blend-mode: luminosity;
+   background-position: center;
+   line-height:40px;
+   border-radius:10px;
+   cursor: pointer;
+   opacity: 0.7;
+}
+/*workpage goback link without underline*/
+.goback a{
+   text-decoration: none;
+}
+/* after click workpage goback button (effect)*/
+.goback:hover{
+  background-color: #64DFDF;
+  color: #0A1931;
+  mix-blend-mode: lighten;
+  transition: 0.2s;
+}
+/* workpage body position*/
+body{
+  background-position: center;
+  background-size: cover;
+}
+/* workpage workpage*/
+.title{
+   position: relative;
+   text-align: center;
+   top:90px;
+   width:1200px;
+   height:60px;
+   border-radius:20px 20px 20px 20px;
+   border: 6px solid #366473;
+   background-color: rgba(0, 0, 0, 0.6);
+   margin:auto;
+   color:#FFFFFF;
+   padding:10px 0px 10px 0px;
+   text-align:center;
+   }
+
+   /* contactpage workpage box*/
+   .main{
+     position: relative;
+     border-radius:20px;
+     border: 6px solid #366473;
+     top:100px;
+     background-color: rgba(0, 0, 0, 0.5);
+     width:1200px;
+     height:680px;
+     margin:auto;
+   }
+
+
+/* workpage video background*/
+.showcaseC video{
+  position: absolute;
+  object-fit:  cover;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+}
+
+/* workpage video background blend*/
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background:url('css firstpage pics/background.jpg');
+  mix-blend-mode: hue;
+  opacity: 0.42;
+}

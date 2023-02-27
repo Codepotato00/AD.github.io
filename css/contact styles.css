@@ -1,0 +1,306 @@
+/*contactpage font style inputs*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/*contactpage text style*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/*contactpage goback box*/
+.goback{
+   position: absolute;
+   top:20px;
+   left:20px;
+   size: 150px;
+   background-color:#39A9CB;
+   font-size: 1.8em;
+   color:#366473;
+   mix-blend-mode: luminosity;
+   background-position: center;
+   line-height:40px;
+   border-radius:10px;
+   cursor: pointer;
+   opacity: 0.7;
+}
+/*contactpage goback link without underline*/
+.goback a{
+   text-decoration: none;
+}
+/* after click contactpage goback button (effect)*/
+.goback:hover{
+  background-color: #64DFDF;
+  color: #0A1931;
+  mix-blend-mode: lighten;
+  transition: 0.2s;
+}
+/* contactpage body position*/
+body{
+  background-position: center;
+  background-size: cover;
+}
+/* contactpage Contact Me*/
+.title{
+   position: relative;
+   top:90px;
+   width:800px;
+   height:60px;
+   border-radius:20px 20px 20px 20px;
+   border: 6px solid #366473;
+   background-color: rgba(0, 0, 0, 0.6);
+   margin:auto;
+   color:#FFFFFF;
+   padding:10px 0px 10px 0px;
+   text-align:center;
+   }
+
+
+/* contactpage Contact Me box*/
+.main{
+  position: relative;
+  border-radius:20px;
+  border: 6px solid #366473;
+  top:100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width:800px;
+  height:610px;
+  margin:auto;
+}
+
+/* contactpage text style for each subject*/
+#name{
+  position: relative;
+  width:100%;
+  height:100px;
+  top:18px;
+}
+
+/* contactpage text position for each subject*/
+.name{
+  position: relative;
+  margin-left: 25px;
+  margin-top: 20px;
+  width:125px;
+  color:white;
+  font-size: 18px;
+  font-weight:700;
+}
+
+/* contactpage firstname box position*/
+.firstname{
+  position: relative;
+  width:200px;
+  left:200px;
+  top:-25px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+}
+/* contactpage lastname box position*/
+.lastname{
+  position: relative;
+  width:200px;
+  left:480px;
+  top:-70px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#555;
+}
+/* contactpage firstname label under the box */
+.firstlabel{
+position: absolute;
+color:#E5E5E5;
+text-transform:capitalize;
+font-size:14px;
+left:203px;
+top:45px;
+}
+/* contactpage firstname label under the box */
+.lastlabel{
+  position: absolute;
+  color:#E5E5E5;
+  text-transform:capitalize;
+  font-size:14px;
+  left:485px;
+  top:45px;
+}
+/* contactpage Message box position */
+.Message{
+  position: relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:480px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color: #555;
+}
+/* contactpage email box position */
+.email{
+  position: relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:480px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color: #555;
+}
+
+/* contactpage phone box position */
+.intl-tel-input{
+  position: relative;
+  left:178px;
+  top:-37px;
+  line-height:50px;
+  width:655px;
+  padding:0 22px;
+  font-size:16px;
+  color: #555;
+}
+
+.intl-tel-input * {
+  box-sizing: border-box;
+  border-radius:6px;
+  -moz-box-sizing: border-box;
+  line-height:40px;
+  width: 480px;
+}
+
+.flag-container{
+  position: relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:480px;
+  padding:0 22px;
+  font-size:16px;
+  color: #555;
+}
+.selected-flag{
+  position:relative;
+  left:16px;
+  top:0;
+}
+
+.selected-dial-code{
+  position:relative;
+  left:-5px;
+  top:0;
+}
+
+#phone1{
+  position: relative;
+  font-size:16px;
+  color: #555;
+}
+
+/* contactpage option box position */
+.option{
+  position: relative;
+  left:200px;
+  top:-30px;
+  line-height: 40px;
+  width:480px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color: #555;
+  outline:none;
+  overflow: hidden;
+}
+
+.option option{
+  font-size:20px;
+}
+/* contactpage yes/no question position */
+.question{
+  position: relative;
+  left:25px;
+  top:-5px;
+  margin-left:25px;
+  font-size:12px;
+  color:white;
+}
+/* contactpage yes/no answer position */
+.hiring p{
+  position:relative;
+  top:-10px;
+  line-height:30px;
+  font-size:16px;
+  color:white;
+}
+
+.YN{
+  position: relative;
+  left:200px;
+  top:-25px;
+  width:480px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color: #555;
+  line-height:40px
+}
+
+::placeholder{
+  color: #000000;
+}
+
+/* contactpage submit button position */
+.submit{
+  position: relative;
+  top:-30px;
+  background-color: #111;
+  margin:25px 0px 0px 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: 6px solid #366473;
+  left:230px;
+  padding:10px 100px;
+  outline:none;
+  font-size: 20px;
+  text-transform:capitalize;
+  color:white;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.7;
+
+}
+/* contactpage submit button text sytle changed after click */
+.submit:hover{
+  background-color: #085F63;
+  color: #D8E9A8;
+  letter-spacing: 6px;
+  transition: 0.5s  ease-in-out;
+}
+
+
+
+/* Contact page video background*/
+.showcaseC video{
+  position: fixed;
+  object-fit:cover;
+  top: 0;
+  left: 0;
+  min-width:100%;
+  min-height:100%;
+}
+
+/* Contact page video background blend*/
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background:url('css firstpage pics/background.jpg');
+  mix-blend-mode: hard-light;
+  opacity: 0.42;
+}

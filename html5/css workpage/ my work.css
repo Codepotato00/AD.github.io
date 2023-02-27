@@ -1,0 +1,187 @@
+/*workpage font style inputs*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/*contactpage text style*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/*workpage goback box*/
+.goback{
+   position: absolute;
+   top:20px;
+   left:20px;
+   size: 150px;
+   background-color:#39A9CB;
+   font-size: 1.8em;
+   color:#366473;
+   mix-blend-mode: luminosity;
+   background-position: center;
+   line-height:40px;
+   border-radius:10px;
+   cursor: pointer;
+   opacity: 0.7;
+}
+/*workpage goback link without underline*/
+.goback a{
+   text-decoration: none;
+}
+/* after click workpage goback button (effect)*/
+.goback:hover{
+  background-color: #64DFDF;
+  color: #0A1931;
+  mix-blend-mode: lighten;
+  transition: 0.2s;
+}
+/* workpage body position*/
+body{
+  background-position: center;
+  background-size: cover;
+}
+/* workpage workpage*/
+.title{
+   position: relative;
+   top:90px;
+   width:1200px;
+   height:60px;
+   border-radius:20px 20px 20px 20px;
+   border: 6px solid #366473;
+   background-color: rgba(0, 0, 0, 0.6);
+   margin:auto;
+   color:#FFFFFF;
+   padding:10px 0px 10px 0px;
+   text-align:center;
+   }
+
+   /* contactpage workpage box*/
+   .main{
+     position: relative;
+     border-radius:20px;
+     border: 6px solid #366473;
+     top:100px;
+     background-color: rgba(0, 0, 0, 0.5);
+     width:1200px;
+     height:680px;
+     margin:auto;
+   }
+
+/* workpage company*/
+
+.Company{
+  position: absolute;
+  width:200px;
+  left:80px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#FFFFFF;
+}
+
+.R{
+  position: relative;
+  width:200px;
+  left:0px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  font-size:16px;
+  color:#FFFFFF;
+  line-height:10;
+}
+
+.T{
+  position: relative;
+  width:200px;
+  left:0px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  font-size:16px;
+  color:#FFFFFF;
+  line-height:10;
+}
+
+.S{
+  position: relative;
+  width:200px;
+  left:0px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  font-size:16px;
+  color:#FFFFFF;
+  line-height:10;
+}
+
+.experience{
+  position: absolute;
+  width:200px;
+  left:300px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#FFFFFF;
+}
+
+.skill{
+  position: absolute;
+  width:200px;
+  left:250px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#FFFFFF;
+}
+
+.education{
+  position: absolute;
+  width:200px;
+  left:450px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#FFFFFF;
+}
+
+.language{
+  position: absolute;;
+  width:200px;
+  left:680px;
+  top:0px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#FFFFFF;
+}
+/* workpage video background*/
+.showcaseC video{
+  position: fixed;
+  object-fit:cover;
+  top: 0;
+  left: 0;
+  min-width:100%;
+  min-height:100%;
+}
+
+/* workpage video background blend*/
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background:url('css firstpage pics/background.jpg');
+  mix-blend-mode: hard-light;
+  opacity: 0.42;
+}
